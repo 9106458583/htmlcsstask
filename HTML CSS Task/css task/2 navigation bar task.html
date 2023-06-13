@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{margin: 0;}
-        .a{
-            
-            border: 2px solid black;z
+        .a{  
+            border: 2px solid black;
             background: black;
             color: white;
-            box-sizing: border-box;
-           
+            box-sizing: border-box; 
         }
         .b{
             height: 70px;
@@ -27,8 +25,7 @@
             margin: auto;
         }
         td{
-            padding: 0px 30px 0px 30px;
-          
+            padding: 0px 30px 0px 30px;  
         }
         .c{
             height: 5px; 
@@ -37,30 +34,49 @@
           
             transform: translate(0px,60px);
             transition: 0.5s;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-           
+            font-family: Arial;    
         }
         td:hover .c{
-           width: 100%;
-            
+           width: 100%;    
         }
         button{
             height: 80px;
             width: 190px;
             background: aqua;
             transform: translate(0px,-5px);
-              margin: 0px 0px 0px 80px;
+            margin: 0px 0px 0px 80px;
 
         }
         .fa{
             color: black;
-            padding: 30px,25px ;
-            font-size: 25px;
-            background: rgb(142, 135, 135);
-            
+           transform: translate(-1px,4px);
+             font-size: 25px;      
+        }
+        /* shop now button  */
+        .d{
+            height: 30px;
+            width: 150px;
+           background: aqua;
+           color:black; 
+           outline: 2px solid aqua ;
+           text-align: center;
+           line-height: 30px;
+           margin: 100px auto;
+           transition: 1s;
+        }
+        .d:hover{
+            outline: 5px solid aqua;
+            outline-offset: 4px;
+
+        }
+        .z{
+            display: block;
+            height: 40px;
+            width: 40px;
+            background: rgba(0,0,0,0.2);
+           transform: translate(60px,-5px);
             
         }
-
     </style>
 </head>
 <body>
@@ -74,12 +90,15 @@
             <td><div class="c"></div>Women`s Wear</td>
             <td><div class="c"></div>Short Codes</td>
             <td><div class="c"></div>Contact</td>
-            <td><button><a href="" style="background:black; ; height: 40px; width: 10px;"><i class="fa fa-cart-arrow-down" aria-hidden="true" ></i></a></button></td>
+            <td><button><a href="" class="z"><i class="fa fa-cart-arrow-down" aria-hidden="true" ></i></a></button></td>
         </tr>
       </table>
     </form>
 
 </div>
-    
+<div class="d">
+      
+    Shop now 
+</div>
 </body>
 </html>

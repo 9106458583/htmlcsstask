@@ -12,6 +12,8 @@
             width: 80px;
             background: black;
             color: white;
+            position: relative;
+            z-index: 0;
            
         } 
         .b{
@@ -20,10 +22,15 @@
             background:aqua;
             transform: scale(0);
             transition: 1s; 
-            padding: 0px, 0px, 50px, 0px;    
-           
-            
+            position: absolute;  
+            left: 0%;
+            top: 0%;
+              z-index: -1;
 
+        }
+        .m
+        {
+            z-index:2 ;
         }
         .fa
         {
@@ -34,11 +41,14 @@
 
        .a:hover .b{
         transform: scale(1);
+       
         } 
         .c{
             height: 80px;
             width: 80px;
-            background: black;
+            background: black; 
+            position: relative;
+           
         }
         .d{
             height: 80px;
@@ -46,6 +56,9 @@
             background:aqua;
             transform: scale(0);
             transition: 1s;
+            position: absolute;
+            left: 0%;
+            top: 0%;
 
         }
 
@@ -56,6 +69,7 @@
             height: 80px;
             width: 80px;
             background: black;
+            position: relative;
         }
         .f{
             height: 80px;
@@ -63,6 +77,9 @@
             background:aqua;
             transform: scale(0);
             transition: 1s;
+            position: absolute;  
+            left: 0%;
+            top: 0%;
 
         }
 
@@ -73,6 +90,7 @@
             height: 80px;
             width: 80px;
             background: black;
+            position: relative;
         }
         .h{
             height: 80px;
@@ -80,6 +98,9 @@
             background:aqua;
             transform: scale(0);
             transition: 1s;
+            position: absolute;  
+            left: 0%;
+            top: 0%;
 
         }
 
@@ -132,24 +153,29 @@
 <body>
 <table>
      <tr>
-         <td> <div class="a"><i class="fa fa-truck" aria-hidden="true"  style="color: white;"></i>
-               <div class="b"></div>
+         <td> <div class="a">
+            <span class="m"><i class="fa fa-truck" aria-hidden="true"  style="color: white;"></i></span>
+               <div class="b"> </div>
+              
                  </div>
                 
         </td>
    
-        <td> <div class="c">
-             <div class="d"><i class="fa fa-headphones" aria-hidden="true"></i></div>
+        <td> <div class="c a">
+            <span class="m"><i class="fa fa-headphones" aria-hidden="true" style="color: white;" ></i></span>
+             <div class="d b"></div>
              </div> 
         </td>
 
-        <td> <div class="e">
-             <div class="f"><i class="fa fa-shopping-bag" aria-hidden="true"></i></div>
+        <td> <div class="e a">
+            <span class="m"><i class="fa fa-shopping-bag" aria-hidden="true" style="color: white;"></i></span>
+             <div class="f b"></div>
              </div>
         </td>
 
-        <td><div class="g">
-            <div class="h"><i class="fa fa-gift" aria-hidden="true"></i></div>
+        <td><div class="g a">
+            <span class="m"><i class="fa fa-gift" aria-hidden="true" style="color: white;"></i></span>
+            <div class="h b"></div>
              </div>
         </td>
     </tr>
