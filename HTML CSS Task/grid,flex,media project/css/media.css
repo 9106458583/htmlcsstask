@@ -1,0 +1,16 @@
+@media(max-width:1450px)
+{
+.log{display: block; text-align: center;}
+.ac{display: none;}
+}
+
+@media(max-width:900px)
+{
+.sunmanu{grid-template-columns: 1fr;}
+/* .senterbox{display: inline;} */
+}
+ 
+@media(max-width:500px)
+{
+    .senterbox{width: 100%;}
+}
